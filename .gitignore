@@ -1,0 +1,25 @@
+## [Visual Studio / .NET]
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.vs/
+.idea/
+*.DotSettings.user
+*.nupkg
+*.snupkg
+# Пакет PbSdk не на nuget.org: его кладут в nupkg/ и коммитят, иначе CI падает с NU1301.
+!nupkg/PbSdk.*.nupkg
+
+## [Artifacts & Secrets]
+*.license.dat
+*.pfx
+*.key
+.env
+appsettings.Local.json
+/_Debug/net7.0-windows
+/_Release/net7.0-windows
